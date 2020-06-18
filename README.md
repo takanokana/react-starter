@@ -1,4 +1,4 @@
-# reactをサクッと使うための環境
+# react redux(redux toolkit)をサクッと使うための環境
 
 ## 開発環境
 * node v12.13.1

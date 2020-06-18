@@ -5,6 +5,8 @@ import {
   Switch,
   Route,
   Link } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './stores/'
 import GlobalStyle from './components/styledComponent/GlobalStyle'
 
 const app = document.getElementById('app')
@@ -13,11 +15,14 @@ const app = document.getElementById('app')
 import Top from './containers/Top.jsx'
 
 ReactDOM.render(
-  <Router>
-    <GlobalStyle />
-    <Switch>
-      <Route path="/" component={Top} />
-    </Switch>
-  </Router>,
+  <Provider store={store}>
+    <Router>
+      <GlobalStyle />
+      <Switch>
+        <Route path="/" component={Top} />
+      </Switch>
+    </Router>
+  </Provider>
+,
   app
 )

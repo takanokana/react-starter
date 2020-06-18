@@ -18,7 +18,7 @@ module.exports = (env, options)  => ({
 
   mode: 'development',
   entry: {
-    user: [`${path.join(__dirname, 'src')}/jsx/user.jsx`],
+    user: [`${path.join(__dirname, 'src')}/jsx/index.jsx`],
   },
   output: {
     path: `${__dirname}/${options.mode === 'development' ? 'dist' : 'build'}/`,
