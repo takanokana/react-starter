@@ -15,9 +15,9 @@ import Top from './containers/Top.jsx'
 ReactDOM.render(
   <Router>
     <GlobalStyle />
-    <Route path="/">
-      <Top />
-    </Route>
+    <Switch>
+      <Route path="/" component={Top} />
+    </Switch>
   </Router>,
   app
 )
